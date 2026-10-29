@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        small{
+            color: red;
+            font-size: 13px;
+        }
+
+        #hide {
+            display: none;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<!-- topic 1: reading values from input, textarea, select. -->
+    <form>
+        <input id="name" type="text" placeholder="name">
+        <div id="hide">
+            <br>
+            <small>Your name should be grater than 2 character.</small>
+        </div>
+        <br><br>
+        <input type="email" placeholder="email">
+        <br><br>
+        <input type="password" placeholder="password">
+        <br><br>
+        <select>
+            <option value="male">male</option>
+            <option value="male">female</option>
+            <option value="male">others</option>
+        </select>
+        <br><br>
+        <textarea placeholder="Tell us about you.."></textarea>
+        <br><br>
+
+        <input type="submit">
+    </form>
+    <br><br>
+
+    <!-- topic 2: inline and js-based validation so here is inline -->
+    <!-- <form>
+        <input required minlength="3" maxlength="10" type="text" placeholder="name">  -->
+        <!-- but ye easily bypass hojata hai by inspect krke usme maxlength htado to kitna bhi lamba likh sakte hai. -->
+        <!-- <input type="submit">
+    </form> -->
+
+    <!-- topic 3: showing error message conditionally -->
+    <!-- ye bhi humne dekh liya hia........... -->
+
+
+    <!-- topic 4: pattern attribute VS custom regex -->
+    <!-- <form>
+        <input pattern="[a-z]{3,8}" type="text" placeholder="name">  // a se z tak koi bhi character use kar skte ho lekin 3 se lekr 8 ke bich m hee.. -->
+        <!-- but ye easily bypass hojata hai by inspect krke usme maxlength htado to kitna bhi lamba likh sakte hai. -->
+        <!-- <input type="submit">
+    </form> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
