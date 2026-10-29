@@ -35,5 +35,12 @@ setTimeout(() => {
     toaster("Vishant accepted your request");
 }, 2000);
 
+setTimeout(() => {
+    toaster("Ujjwal sent you a 10,000 rupees only");
+}, 2500);
+
+
+
+
 
 
